@@ -1,2 +1,2 @@
 # on-death-open
-minecraft
+🖕
