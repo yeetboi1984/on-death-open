@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.yeetboi1984.ondeathopen.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"OnDeath"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

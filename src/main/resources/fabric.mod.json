@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "on-death-open",
+	"version": "${version}",
+	"name": "On Death, Open:",
+	"description": "Run a specified command on death",
+	"authors": [
+		"yeetboi1984",
+		"Epixium"
+	],
+	"contact": {
+		"homepage": "https://yeetboi1984.xyz/",
+		"sources": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	},
+	"license": "MIT",
+	"icon": "assets/on-death-open/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"net.yeetboi1984.ondeathopen.OnDeathOpenClient"
+		],
+		"fabric-datagen": [
+			"net.yeetboi1984.ondeathopen.OnDeathOpenDataGenerator"
+		],
+		"modmenu": [
+			"net.yeetboi1984.ondeathopen.OnDeathOpenModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"on-death-open.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"cloth-config": ">=11.1.99",
+		"modmenu": ">=7.2.0"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
